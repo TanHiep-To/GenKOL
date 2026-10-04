@@ -68,7 +68,7 @@
 </div>
 
           <div class="is-size-5 publication-authors">
-<span class="author-block">2025</span>
+<span class="author-block">FJCAI 2025</span>
 </div>
 
           <div class="is-size-5 publication-authors">
@@ -105,7 +105,7 @@
 <div class="container is-max-desktop">
 <div class="hero-body">
 
-<img alt="Workflow of the proposed GenKOL system" class="interpolation-image" height="756" loading="lazy" src="./static/images/fig1.png" width="970">
+<img alt="Workflow diagram: input images or text and a prompt go through dressing, makeup and interaction plugins to an output image." class="interpolation-image" height="756" loading="lazy" src="./static/images/fig1.png" width="970">
       <h2 class="subtitle has-text-centered">GenKOL composes virtual KOL images from modular AI services and was rated by 254&nbsp;participants&nbsp;in&nbsp;a&nbsp;user&nbsp;study.</h2>
 </div>
 </div>
@@ -117,26 +117,9 @@
 
 <div class="columns is-centered has-text-centered">
 <div class="column is-four-fifths">
-<h2 class="title is-3">Abstract</h2>
-<div class="content has-text-justified"><p>Key Opinion Leader (KOL) play a crucial role in modern marketing by shaping consumer perceptions and enhancing brand credibility. However, collaborating with human KOLs often involves high costs and logistical challenges. To address this, we present GenKOL, an interactive system that empowers marketing professionals to efficiently generate high-quality virtual KOL images using generative AI. GenKOL enables users to dynamically compose promotional visuals through an intuitive interface that integrates multiple AI capabilities, including garment generation, makeup transfer, background synthesis,&nbsp;and&nbsp;hair&nbsp;editing.</p><p>These capabilities are implemented as modular, interchangeable services that can be deployed flexibly on local machines or in the cloud. This modular architecture ensures adaptability across diverse use cases and computational environments. Our system can significantly streamline the production of branded content, lowering costs and accelerating marketing workflows through scalable&nbsp;virtual&nbsp;KOL&nbsp;creation.</p></div>
-</div>
-</div>
-
-
-
-
-</div>
-</section>
-
-
-<section class="section">
-<div class="container is-max-desktop">
-
-<div class="columns is-centered has-text-centered">
-<div class="column is-four-fifths">
 <h2 class="title is-3">Method</h2>
-<div class="content has-text-justified"><p>GenKOL uses a modular, plugin-based architecture in which each AI capability, such as garment generation, makeup transfer or background synthesis, is an independent service with a standardized interface. The architecture consists of four key components: Engine, Flow Generator, Services,&nbsp;and&nbsp;Algorithms.</p><p>The Engine is a proxy layer that standardizes communication among services, and the Flow Generator composes executable pipelines from the registered services. A pretrained facial landmark detection model, which identifies 68&nbsp;key facial landmarks, normalizes the pose before the&nbsp;generative&nbsp;services&nbsp;run.</p></div>
-<div class="content has-text-centered"><img alt="Proposed modular AI services architecture" class="interpolation-image" height="1121" loading="lazy" src="./static/images/fig4.png" width="914"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;4.</strong> Proposed modular AI services&nbsp;architecture.</h2></div>
+<div class="content has-text-justified"><p>GenKOL uses a modular, plugin-based architecture in which each AI capability, such as garment generation, makeup transfer or background synthesis, is an independent service with a standardized interface. The architecture consists of four key components: Engine, Flow Generator, Services,&nbsp;and&nbsp;Algorithms.</p><p>The Engine is a proxy layer that standardizes communication among services, and the Flow Generator composes executable pipelines from&nbsp;the&nbsp;registered&nbsp;services.</p></div>
+<div class="content has-text-centered"><img alt="Architecture diagram with front end, back end engine proxy, flow generator, services and algorithms." class="interpolation-image" height="1121" loading="lazy" src="./static/images/fig4.png" width="914"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;4.</strong> Proposed modular AI services&nbsp;architecture.</h2></div>
 </div>
 
 
@@ -153,7 +136,7 @@
 <div class="column is-four-fifths">
 <h2 class="title is-3">Quantitative Results</h2>
 
-<h2 class="subtitle has-text-centered"><strong>Table&nbsp;II.</strong> QUALITATIVE COMPARISON BETWEEN GENKOL, GEMINI-2.0, AND CHATGPT-4O IN TERMS OF IMAGE GENERATION TIME, PERCEPTUAL QUALITY, AND OBJECT CONSISTENCY. Best in bold, second&nbsp;best&nbsp;underlined.</h2><div class="table-container"><table class="table is-fullwidth is-hoverable"><thead><tr><th scope="col">Method</th><th scope="col">Average Generation Time (s)</th><th scope="col">Image Quality</th><th scope="col">Consistency</th></tr></thead><tbody><tr><th scope="row">Gemini-2.0</th><td><strong>30</strong></td><td>Neutral</td><td>Bad</td></tr><tr><th scope="row">ChatGPT-4o</th><td>600</td><td>Very&nbsp;Good</td><td>Neutral</td></tr><tr><th scope="row">GenKOL</th><td><u>300</u></td><td>Good</td><td>Very&nbsp;Good</td></tr></tbody></table></div><div class="content has-text-justified"><p>GenKOL needs 300&nbsp;s on average, longer than Gemini-2.0 (30&nbsp;s) and half the time of ChatGPT-4o (600&nbsp;s). Its image quality is rated Good and its consistency Very Good; the ratings in this&nbsp;table&nbsp;are&nbsp;qualitative.</p></div><div class="content has-text-justified"><p>In the user study of generated images, most ratings fall in the 4-5 range of&nbsp;a&nbsp;5-point&nbsp;Likert&nbsp;scale.</p></div><div class="content has-text-centered"><img alt="Rating distributions across four evaluation metrics in the user study of generated images" class="interpolation-image" height="518" loading="lazy" src="./static/images/fig9.png" width="2023"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;9.</strong> Rating distributions across four evaluation metrics in the user study of generated images. The horizontal bars indicate the aggregated scores&nbsp;for&nbsp;each&nbsp;metric.</h2></div>
+<h2 class="subtitle has-text-centered"><strong>Table&nbsp;II.</strong> QUALITATIVE COMPARISON BETWEEN GENKOL, GEMINI-2.0, AND CHATGPT-4O IN TERMS OF IMAGE GENERATION TIME, PERCEPTUAL QUALITY, AND OBJECT CONSISTENCY. Best in bold, second&nbsp;best&nbsp;underlined.</h2><div class="table-container"><table class="table is-fullwidth is-hoverable"><thead><tr><th scope="col">Method</th><th scope="col">Average Generation Time (s)</th><th scope="col">Image Quality</th><th scope="col">Consistency</th></tr></thead><tbody><tr><th scope="row">Gemini-2.0</th><td><strong>30</strong></td><td>Neutral</td><td>Bad</td></tr><tr><th scope="row">ChatGPT-4o</th><td>600</td><td>Very&nbsp;Good</td><td>Neutral</td></tr><tr><th scope="row">GenKOL</th><td><u>300</u></td><td>Good</td><td>Very&nbsp;Good</td></tr></tbody></table></div><div class="content has-text-justified"><p>GenKOL needs 300&nbsp;s on average, longer than Gemini-2.0 (30&nbsp;s) and half the time of ChatGPT-4o (600&nbsp;s). Its image quality is rated Good and its consistency Very Good; the ratings in this&nbsp;table&nbsp;are&nbsp;qualitative.</p></div><div class="content has-text-justified"><p>In the user study of generated images, most ratings fall in the 4-5 range of&nbsp;a&nbsp;5-point&nbsp;Likert&nbsp;scale.</p></div><div class="content has-text-centered"><img alt="Stacked bar charts of user ratings for four evaluation metrics." class="interpolation-image" height="518" loading="lazy" src="./static/images/fig9.png" width="2023"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;9.</strong> Rating distributions across four evaluation metrics in the user study of generated images. The horizontal bars indicate the aggregated scores&nbsp;for&nbsp;each&nbsp;metric.</h2></div>
 </div>
 
 
@@ -170,7 +153,7 @@
 <div class="column is-four-fifths">
 <h2 class="title is-3">Qualitative Results</h2>
 <div class="content has-text-justified"><p>Given an original image and prompts for garment, makeup style and interaction object, GenKOL synthesizes virtual KOLs that combine all elements, including the&nbsp;specified&nbsp;background.</p></div>
-<div class="content has-text-centered"><img alt="Examples of generated results of GenKOL" class="interpolation-image" height="1110" loading="lazy" src="./static/images/fig7.jpg" width="2090"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;7.</strong> Examples of generated results of GenKOL. Given an original image (top row, left) and corresponding prompts for each attribute (garment, makeup style, and interaction object), our GenKOL system (rightmost column) synthesizes realistic virtual KOLs that seamlessly combine all elements, including the specified&nbsp;background.</h2><div class="content has-text-justified"><p>Outputs of GenKOL, Gemini-2.0 and ChatGPT-4o for the same scenes&nbsp;and&nbsp;visual&nbsp;prompts.</p></div><div class="content has-text-centered"><img alt="Qualitative comparison of image outputs from GenKOL (Ours), Gemini-2" class="interpolation-image" height="1108" loading="lazy" src="./static/images/fig8.jpg" width="2088"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;8.</strong> Qualitative comparison of image outputs from GenKOL (Ours), Gemini-2.0, and ChatGPT-4o across diverse scenes&nbsp;and&nbsp;visual&nbsp;prompts.</h2></div>
+<div class="content has-text-centered"><img alt="Grid of an original image, attribute references and the virtual KOL images generated by GenKOL." class="interpolation-image" height="1110" loading="lazy" src="./static/images/fig7.jpg" width="2090"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;7.</strong> Examples of generated results of GenKOL. Given an original image (top row, left) and corresponding prompts for each attribute (garment, makeup style, and interaction object), our GenKOL system (rightmost column) synthesizes realistic virtual KOLs that seamlessly combine all elements, including the specified&nbsp;background.</h2><div class="content has-text-justified"><p>Outputs of GenKOL, Gemini-2.0 and ChatGPT-4o for the same scenes&nbsp;and&nbsp;visual&nbsp;prompts.</p></div><div class="content has-text-centered"><img alt="Input images and the outputs of GenKOL, Gemini-2.0 and ChatGPT-4o for two scenes." class="interpolation-image" height="1108" loading="lazy" src="./static/images/fig8.jpg" width="2088"></div><h2 class="subtitle has-text-centered"><strong>Figure&nbsp;8.</strong> Qualitative comparison of image outputs from GenKOL (Ours), Gemini-2.0, and ChatGPT-4o across diverse scenes&nbsp;and&nbsp;visual&nbsp;prompts.</h2></div>
 </div>
 
 
@@ -183,10 +166,11 @@
 <section class="section" id="BibTeX">
 <div class="container is-max-desktop content">
 <h2 class="title">BibTeX</h2>
-<pre><code>@misc{to2025genkol,
-  author = {To, Tan-Hiep and Nguyen, Duy-Khang and Nguyen, Tam V. and Tran, Minh-Triet and Le, Trung-Nghia},
-  title  = {GenKOL: Modular Generative AI Framework For Scalable Virtual KOL Generation},
-  year   = {2025},
+<pre><code>@article{to2025genkol,
+  author  = {To, Tan-Hiep and Nguyen, Duy-Khang and Nguyen, Tam V. and Tran, Minh-Triet and Le, Trung-Nghia},
+  title   = {GenKOL: Modular Generative AI Framework For Scalable Virtual KOL Generation},
+  journal = {FJCAI},
+  year    = {2025},
 }</code></pre>
 </div>
 </section>
